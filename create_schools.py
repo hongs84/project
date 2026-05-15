@@ -1,0 +1,25 @@
+import pandas as pd
+
+schools_data = [
+    ["천안공고","충남",12,"Y","스마트팩토리과","제조",180,2.1,82,76,15,88,79,"대기업","실습형","분석형","제조","취업","대기업"],
+    ["아산전자고","충남",25,"N","AI전자과","IT",195,3.4,85,80,20,91,83,"공기업","혼합형","창의형","IT","취업","공기업"],
+    ["대전서비스고","대전",40,"Y","관광서비스과","서비스",160,1.8,78,70,30,75,68,"서비스직","실습형","외향형","서비스","진학","서비스직"],
+    ["서울바이오고","서울",70,"Y","바이오연구과","연구",200,4.0,88,82,40,94,85,"연구직","이론형","분석형","연구","진학","연구직"],
+    ["국방항공고","충남 논산",15,"Y","항공기계과","제조",185,2.8,84,78,18,89,81,"공기업","실습형","분석형","제조","취업","공기업"],
+    ["국방항공고","충남 논산",15,"Y","국방전기전자과","IT",190,3.1,86,79,20,90,83,"대기업","혼합형","창의형","IT","취업","대기업"],
+    ["국방항공고","충남 논산",15,"Y","바이오제약과","연구",188,2.6,83,77,25,92,84,"연구직","이론형","분석형","연구","진학","연구직"]
+]
+
+columns = [
+    "school_name","region","distance_km","dormitory","department","industry",
+    "cutoff_grade","competition_rate","employment_rate","retention_rate",
+    "college_rate","certification_rate","major_match_rate",
+    "employment_support_level","learning_style","preferred_personality",
+    "work_environment","college_track","career_path"
+]
+
+df = pd.DataFrame(schools_data, columns=columns)
+
+df.to_csv("schools.csv", index=False, encoding="utf-8-sig")
+
+print("schools.csv 생성 완료")

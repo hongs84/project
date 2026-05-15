@@ -1,0 +1,17 @@
+import pandas as pd
+
+questions = [
+    [1,"나는 기계, 생산 자동화 분야에 관심이 많다.","제조"],
+    [2,"나는 컴퓨터, AI, 전자기술에 관심이 있다.","IT"],
+    [3,"나는 고객 응대나 서비스 분야를 선호한다.","서비스"],
+    [4,"나는 연구, 실험, 분석 활동이 좋다.","연구"],
+    [5,"나는 자격증 취득을 중요하게 생각한다.","자기개발"],
+    [6,"나는 실습형 수업을 선호한다.","실습형"],
+    [7,"나는 대기업/공기업 취업을 목표로 한다.","취업목표"]
+]
+
+df = pd.DataFrame(questions, columns=["question_id","question","category"])
+
+df.to_csv("aptitude_questions.csv", index=False, encoding="utf-8-sig")
+
+print("aptitude_questions.csv 생성 완료")
