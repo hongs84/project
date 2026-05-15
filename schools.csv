@@ -1,4 +1,4 @@
-﻿school_name,region,distance_km,dormitory,department,industry,cutoff_grade,competition_rate,employment_rate,retention_rate,college_rate,certification_rate,major_match_rate,employment_support_level,learning_style,preferred_personality,work_environment,college_track,career_path
+﻿학교명,지역,통학거리,기숙사여부,학과명,산업분야,합격커트라인,경쟁률,취업률,유지취업률,진학률,자격증취득률,전공일치율,취업지원수준,학습성향,권장성격,근무환경,진학경로,진로방향
 천안공고,충남,12,Y,스마트팩토리과,제조,180,2.1,82,76,15,88,79,대기업,실습형,분석형,제조,취업,대기업
 아산전자고,충남,25,N,AI전자과,IT,195,3.4,85,80,20,91,83,공기업,혼합형,창의형,IT,취업,공기업
 대전서비스고,대전,40,Y,관광서비스과,서비스,160,1.8,78,70,30,75,68,서비스직,실습형,외향형,서비스,진학,서비스직
