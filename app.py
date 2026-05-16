@@ -24,8 +24,6 @@ html, body, [class*="css"] {font-size:16px !important;}
 
 st.markdown("""
 <div class='main-title'>
-직업계고 조기 진로 설정에 따른<br>
-적성불일치 개선을 위한<br>
 AI 진로 네비게이터 개발
 </div>
 """, unsafe_allow_html=True)
